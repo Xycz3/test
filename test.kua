@@ -1,0 +1,44 @@
+-- [CREDITS: YakuziZabc1]
+-- [THIS SCRIPT IS MADE THAT IT GETS CUSTOMIZED]
+-- [THIS SCRIPT ALSO COUNTS AS A BEGINNER GUIDE]
+-- [CHANGE THE MARKED VALUES TO CHANGE THINGS]
+-- [MARKED VALUES HAS THIS SYMBOL NEXT TO THE LINE "--::"]
+-- [YOU CAN DELETE THE PRINT OPERATORS IF YOU WANT BUT I WOULD NOT RECOMMEND THAT]
+-- [BECAUSE YOU CAN SEE IF THE CODE WORKS AND TO WICH POINT WHEN ERRORS ARE THERE]
+
+-- [SETTING THE VARIABLES]
+local player = game.Players.LocalPlayer
+local char = player.Character
+local humanoid = char.Humanoid
+
+print("Variables Loaded!")
+
+-- [WALKSPEED CHANGER]
+humanoid.WalkSpeed = 16 --:: [DEFAULT IS 16, THE HIGHER THE NUMBER THE FASTER YOU ARE]
+
+print("Walkspeed got set to "..humanoid.WalkSpeed.."!")
+
+-- [JUMPPOWER CHANGER]
+humanoid.JumpPower = 50 --:: [DEFAULT IS 50, THE HIGHER THE NUMBER THE HIGHER YOU JUMP]
+
+print("JumpPower got set to "..humanoid.JumpPower.."!")
+
+--[DELETE THE "--" FROM THE FOLLOWING CODE IF THE JUMPPOWER CHANGER DOESNT WORKS]
+if humanoid.UseJumpPower == true then 
+    humanoid.JumpHeight = 7.2 --:: [DEFAULT IS 7.2, THE HIGHER THE NUMBER THE HIGHER YOU JUMP]
+    
+    print("JumpHeight got set to "..humanoid.JumpHeight.."!")
+
+end
+
+-- [HEALTH CHANGER]
+humanoid.MaxHealth = 100 --:: [DEFAULT IS 100, THE HIGHER THE NUMBER THE MORE HEALTH YOU CAN HAVE]
+humanoid.Health = 100 --:: [DEFAULT IS 100, THE HIGHER THE NUMBER THE MORE OR LESS HEALTH YOU HAVE]
+                      --:: [REMEMBER THAT IF YOURE HEALTH IS HIGHER THEN YOUR MAXHEALTH IT WONT WORK]
+
+print("MaxHealth got set to "..humanoid.MaxHealth.."!")
+print("Health got set to "..humanoid.Health.."!")
+
+
+
+
